@@ -1,0 +1,10 @@
+   0.023066600s  INFO prepare_target{force=false package_id=day3 v0.1.0 (D:\code\git room\test\day3) target="day3"}: cargo::core::compiler::fingerprint: stale: missing "D:\\code\\git room\\test\\day3\\src\\user.rs"
+   0.030089900s  INFO prepare_target{force=false package_id=day3 v0.1.0 (D:\code\git room\test\day3) target="day3"}: cargo::core::compiler::fingerprint: fingerprint dirty for day3 v0.1.0 (D:\code\git room\test\day3)/Check { test: false }/TargetInner { name: "day3", doc: true, ..: with_path("D:\\code\\git room\\test\\day3\\src\\main.rs", Edition2024) }
+   0.030126600s  INFO prepare_target{force=false package_id=day3 v0.1.0 (D:\code\git room\test\day3) target="day3"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(MissingFile { path: "D:\\code\\git room\\test\\day3\\src\\user.rs" }))
+   0.032585200s  INFO prepare_target{force=false package_id=day3 v0.1.0 (D:\code\git room\test\day3) target="day3"}: cargo::core::compiler::fingerprint: stale: missing "D:\\code\\git room\\test\\day3\\src\\user.rs"
+   0.038333200s  INFO prepare_target{force=false package_id=day3 v0.1.0 (D:\code\git room\test\day3) target="day3"}: cargo::core::compiler::fingerprint: fingerprint dirty for day3 v0.1.0 (D:\code\git room\test\day3)/Check { test: true }/TargetInner { name: "day3", doc: true, ..: with_path("D:\\code\\git room\\test\\day3\\src\\main.rs", Edition2024) }
+   0.038366100s  INFO prepare_target{force=false package_id=day3 v0.1.0 (D:\code\git room\test\day3) target="day3"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(MissingFile { path: "D:\\code\\git room\\test\\day3\\src\\user.rs" }))
+    Checking day3 v0.1.0 (D:\code\git room\test\day3)
+error: could not compile `day3` (bin "day3") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `day3` (bin "day3" test) due to 1 previous error

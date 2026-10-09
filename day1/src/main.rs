@@ -4,14 +4,9 @@ struct User {
     name : String,
     age : i32,
 }
-fn find_user(users:&Vec<User>, target_id:i32) -> Option<&User>{
-    for user in &users{
-        if user.id == target_id{
-            return Some(user);
-        }
-    }
-    None
-
+fn birthday(user:&mut User){
+    let mut a: i32 = user.age;
+    a+=1
 }
 impl User{
     fn is_adult(&self) -> bool{
@@ -27,7 +22,7 @@ impl User{
     }
 }
 fn main() {
-    let users = vec![
+    let mut users = vec![
         User{
             id:1,
             name: String::from("Alan"),
@@ -45,10 +40,5 @@ fn main() {
         },
     ];
 
-    for user in users {
-        if user.name == "Bob"{
-            println!("Bob is adult? {}",user.is_adult());
-            user.show();
-        }
-    }
+    birthday(&mut user[0])
 }
